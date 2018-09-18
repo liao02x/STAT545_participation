@@ -121,7 +121,7 @@ eval(expr)
 ```
 3. Use the `as.character()` function to check whether this response contains an `if` statement.
 ```{r}
-as.character(expr, "if")
+"if" %in% as.character(expr)
 ```
 # Relational/Comparison and Logical Operators in R
 

@@ -1738,11 +1738,8 @@ if (my_commute &gt; 30) {
 <ol start="3" type="1">
 <li>Use the <code>as.character()</code> function to check whether this response contains an <code>if</code> statement.</li>
 </ol>
-<pre class="r"><code>as.character(expr, &quot;if&quot;)</code></pre>
-<pre><code>## [1] &quot;if&quot;                                          
-## [2] &quot;my_commute &gt; 30&quot;                             
-## [3] &quot;{\n    print(\&quot;That's a long commute!\&quot;)\n}&quot; 
-## [4] &quot;{\n    print(\&quot;That's a short commute.\&quot;)\n}&quot;</code></pre>
+<pre class="r"><code>&quot;if&quot; %in% as.character(expr)</code></pre>
+<pre><code>## [1] TRUE</code></pre>
 </section>
 <section id="relationalcomparison-and-logical-operators-in-r" class="level1">
 <h1>Relational/Comparison and Logical Operators in R</h1>
