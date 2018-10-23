@@ -237,5 +237,5 @@ qd2 <- function(x, probs=c(0,1), na.rm=TRUE, ...) {
     max(qvec) - min(qvec)
 }
 v <- rnorm(100)
-qd2(v, probs=c(0,1), na.rm=TRUE, 1)
+qd2(v, probs=c(0,1), na.rm=TRUE, type=1)
 ```
